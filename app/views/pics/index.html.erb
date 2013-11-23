@@ -1,13 +1,9 @@
-<h2>
-
 	<% @pics.each do |pic| %>
-	<div>
-		Lesson: <%= pic.lesson %>
+	<div class = "stolen-frosty span4 text-center" >
+		<h1 class = "stolen-h1">Lesson: <%= pic.lesson %></h1>
 		<br />
-		Emotion: <%= pic.emotion %>
+		<h2>Emotion: <%= pic.emotion %></h2>
 		<br />
-		Learned: <%= pic.learned %>
+		<h2>Learned: <%= pic.learned %></h2>
 	</div>
 	<% end %>
-
-</h2>
