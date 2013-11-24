@@ -21,6 +21,16 @@ class PicsController < ApplicationController
 		@pic = Pic.find(params[:id])
 	end
 
+	def update
+		@pic = Pic.find(params[:id])
+		@pic.update_attributes( pic_params )
+		if @pic.valid?
+		   redirect_to pics_path	
+		else
+			render :edit, :status => :unprocessable_entity
+		end
+	end
+
 	def create
 		# Call Pic.create(:lesson =>1, ....)
 		@pic = Pic.create( pic_params )
