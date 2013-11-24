@@ -5,6 +5,6 @@
 	<h2>I learned: <%= @pic.learned %></h2>
 
 	<%= link_to 'Go Back', pics_path, :class => 'btn btn-danger btn-large' %>
-
+	<%= link_to 'Kill it', pic_path(@pic), :method => :delete, :class => 'btn btn-warning btn-large', :confirm => "Are you sure?" %>
 
 </div>
