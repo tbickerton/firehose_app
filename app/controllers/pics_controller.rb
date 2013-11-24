@@ -18,7 +18,7 @@ class PicsController < ApplicationController
 
 
 	def pic_params
-		params.require(:pic).permit(:lesson, :learned, :emotion)
+		params.require(:pic).permit(:lesson, :learned, :emotion, :image)
 
 	end
 
